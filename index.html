@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor BSON para JSON</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor BSON para JSON</h1>
+        <p class="descricao">
+            Converta facilmente seus arquivos BSON (Binary JSON) para o formato JSON legível.
+            Aceitamos qualquer tipo de arquivo, mas apenas arquivos BSON válidos serão convertidos.
+        </p>
+        
+        <div class="area-soltar" id="areaSoltar">
+            <p>Arraste e solte qualquer arquivo aqui</p>
+            <p>ou</p>
+            <button class="botao-navegar" id="botaoNavegar">Selecionar Arquivo</button>
+            <input type="file" id="entradaArquivo" class="entrada-arquivo">
+        </div>
+        
+        <div class="info-arquivo" id="infoArquivo"></div>
+        
+        <button class="botao-converter" id="botaoConverter">Tentar Converter para JSON</button>
+        
+        <div class="mensagem-info" id="mensagemInfo"></div>
+        <div class="mensagem-sucesso" id="mensagemSucesso"></div>
+        <div class="mensagem-aviso" id="mensagemAviso"></div>
+        
+        <div class="area-resultado" id="areaResultado">
+            <div class="cabecalho-resultado">
+                <h3>Resultado JSON:</h3>
+                <button class="botao-download" id="botaoDownload">Baixar JSON</button>
+            </div>
+            <div class="exibicao-json" id="exibicaoJson"></div>
+        </div>
+        
+        <div class="info-formato">
+            <div class="cartao-formato">
+                <h3>BSON</h3>
+                <p>BSON (Binary JSON) é um formato de serialização binária usado para armazenar documentos e arrays. É usado principalmente no MongoDB.</p>
+            </div>
+            <div class="cartao-formato">
+                <h3>JSON</h3>
+                <p>JSON (JavaScript Object Notation) é um formato de texto legível para humanos, usado para transmitir dados estruturados entre aplicações.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Esta ferramenta tenta converter qualquer arquivo para JSON. Arquivos não-BSON resultarão em JSON vazio ou erro controlado.</p>
+        </footer>
+    </div>
+
+    
+    
+</body>
+</html>
