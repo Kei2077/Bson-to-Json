@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor BSON para JSON</title>
-    
 </head>
 <body>
     <div class="container">
@@ -22,6 +21,11 @@
         </div>
         
         <div class="info-arquivo" id="infoArquivo"></div>
+        
+        <div class="carregando" id="carregando">
+            <div class="spinner"></div>
+            <p>Analisando arquivo...</p>
+        </div>
         
         <button class="botao-converter" id="botaoConverter">Tentar Converter para JSON</button>
         
@@ -52,8 +56,8 @@
             <p>Esta ferramenta tenta converter qualquer arquivo para JSON. Arquivos não-BSON resultarão em JSON vazio ou erro controlado.</p>
         </footer>
     </div>
-
-    
+<script src="https://cdn.jsdelivr.net/npm/bson@4.7.2/dist/bson.browser.umd.min.js"></script>
+<script src="./script/script.js"></script>
     
 </body>
 </html>
